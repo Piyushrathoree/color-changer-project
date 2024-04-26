@@ -30,7 +30,7 @@ let body=document.querySelector("body")
 
 box.forEach(function(btn){
     btn.addEventListener("click",function(e){
-        // console.log(e);
+        console.log(e);
         // console.log(e.target);
         
         body.style.backgroundColor=e.target.style.backgroundColor
