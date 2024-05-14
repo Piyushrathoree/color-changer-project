@@ -61,7 +61,7 @@ function displayGuess(guess) {
   remaining.innerHTML = `${11 - numGuess} `;
 }
 
-function displayMessage(message) {
+const displayMessage=(message)=>{
   lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 
