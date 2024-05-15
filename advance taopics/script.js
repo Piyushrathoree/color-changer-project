@@ -1,5 +1,5 @@
 const profilePhoto=document.querySelector('.card')
-const requestUrl = "https://api.github.com/users/Piyushrathoree;
+const requestUrl = "https://api.github.com/users/Piyushrathoree"
       const xhr = new XMLHttpRequest();//creating a xml/api request 
       xhr.open("GET", requestUrl);//this method shows what you have to perform and from where 
       xhr.onreadystatechange = function () {
