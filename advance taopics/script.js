@@ -1,10 +1,10 @@
 const profilePhoto=document.querySelector('.card')
 const requestUrl = "https://api.github.com/users/Piyushrathoree"
       const xhr = new XMLHttpRequest();//creating a xml/api request 
-      xhr.open("GET", requestUrl);//this method shows what you have to perform and from where 
-      xhr.onreadystatechange = function () {
+      xhr.open("GET", requestUrl);//this method shows what you have to perform and from where //this initialize the http method but doesn't send anything
+      xhr.onreadystatechange = function () {//it is setting up an event listner that when this change to ready state it process the response data 
         console.log(xhr.readyState);
-        if (xhr.readyState === 4) {
+        if (xhr.readyState === 4) {//ready state has 5 stages in which the 5th index(4) is when it is completed 
           const data = JSON.parse(this.responseText);//converting the data into object form because everything which is recieved from request is come in the form of string
           console.log(typeof data);
           console.log(data.followers);
