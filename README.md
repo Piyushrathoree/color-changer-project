@@ -1,1 +1,1 @@
-# javascript basic projects for practicing js 
+# learning javascript in depth
