@@ -13,6 +13,7 @@ class user{
 class teacher extends user{
     constructor(name,password){
         super(name);//ssuper keyword is user for copying the same constructor value like parent class
+        //and this super keyword using instead of using call method from previous file
         this.password=password
 
     }
