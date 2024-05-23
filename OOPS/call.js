@@ -5,7 +5,7 @@ function callMe(username){
 }
 function createUser(username,email,pass){
     // callMe(username)
-    //now here it looks like that when I run this it will assign username to username from the function above but no it will user it but whenever we are using it will not return any value so we use 'call'method here
+    //now here it looks like that when I run this it will assign username to username from the function above but no it will use it but whenever we are using it will not return any value so we use 'call'method here
     callMe.call(this,username)
     this.email=email;
     this.pass=pass;
